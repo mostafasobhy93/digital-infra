@@ -1035,6 +1035,28 @@ footer .footer-bottom .footer-social .social-list li a:hover {
     border-left: 4px solid #F2F4F7;
     margin-bottom: 1rem;
     background-color: #fff;
+    position: relative;
+    transition: all .3s;
+}
+.network-section .network-plan:hover {
+    border-color: #2468A5;
+}
+.network-section .network-plan::before {
+    content: '';
+    content: '';
+    background: linear-gradient(90deg, #44BCFF -0.55%, #44B0FF 22.86%, #FF44EC 48.36%, #FF44EC 73.33%, #FF675E 99.34%);
+    filter: blur(35px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s;
+    z-index: -1;
+}
+.network-section .network-plan:hover::before {
+    opacity: .4;
 }
 
 /***

@@ -146,7 +146,7 @@
 	
 	<!-- get touch -->
 	<div class="get-touch-section sec-padding">
-        <div class="row gx-0 align-items-center">
+        <div class="row gx-5 align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0 wow fadeInUp">
                 <div class="get-content">
                     <h1 class="title text-dark mb-4">We develop digital experiences that create more joy in the world</h1>
@@ -450,6 +450,13 @@
 
 	<!-- spline-viewer -->
 	<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.493/build/spline-viewer.js"></script>
+	<script>
+		// hide spline logo
+		window.onload = function() {
+			var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+			shadowRoot.querySelector('#logo').remove();
+		}
+	</script>
 
 	<!--        Main Js -->
 	<script src="assets/js/main.js"></script>
